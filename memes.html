@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard's Favorite Memes</title>
-    <!-- Link to the external CSS file -->
+    <title>Richard's Personal Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="navbar.js" type="text/javascript"></script>
 </head>
+
 <body>
     <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="#">Favorite Memes</a>
-    </div>
+    <navbar-component>
+    
+    </navbar-component>
 
     <!-- Memes Content Section -->
-    <div style="text-align: center;">
+    <div class="example" style="text-align: center;color:darkcyan">
         <h1 class="big-text">Richard's Memes</h1>
-        
+
         <!-- Add your meme content here -->
         <div>
             <img src="images\nickeh30-fortnite.gif" alt="Meme 1">
             <p class="small-text">Caption for Meme 1</p>
         </div>
-        
+
         <div>
             <img src="meme2.jpg" alt="Meme 2">
             <p class="small-text">Caption for Meme 2</p>
@@ -31,6 +31,29 @@
 
         <!-- Add more memes as needed -->
 
+
     </div>
+    <script>
+        function displayWindowSize() {
+            var w = document.documentElement.clientWidth;
+            var h = document.documentElement.clientHeight;
+            var menu = document.querySelector('.navbar .menu');
+            if (w >= 768) {
+                menu.style.display = 'flex';
+            } 
+        }
+        function myFunction() {
+            var menu = document.querySelector('.navbar .menu');
+
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            } 
+        }
+        window.addEventListener("resize", displayWindowSize);
+        displayWindowSize(); 
+        </script>
 </body>
+
 </html>
