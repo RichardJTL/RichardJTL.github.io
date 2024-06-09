@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard's Personal Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="navbar.js" type="text/javascript"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<navbar-component>
-    
-</navbar-component>
-    <!-- Content Section -->
-    <div style="display: flex; flex-direction: column; align-items: center;">
-        <h1 class="big-text">Hi! I'm Richard</h1>
-        <p class="small-text">Here's a bit about me: I'm a web developer who loves coding and creating cool websites.</p>
-
-        <!-- Favorite YouTube Videos Section -->
-        <h2>My Favorite YouTube Videos</h2>
-        <ul>
-            
-            <li><a href="https://www.youtube.com/watch?v=video1">Video 1</a></li>
-            <li><a href="https://www.youtube.com/watch?v=video2">Video 2</a></li>
-            <li><a href="https://www.youtube.com/watch?v=video3">Video 3</a></li>
-            <li><a href="https://www.youtube.com/watch?v=video4">Video 4</a></li>
-            <li><a href="https://www.youtube.com/watch?v=video5">Video 5</a></li>
-        </ul>
-        
-    </div>
-    <script>
-        function displayWindowSize() {
-            var w = document.documentElement.clientWidth;
-            var h = document.documentElement.clientHeight;
-            var menu = document.querySelector('.navbar .menu');
-            if (w >= 768) {
-                menu.style.display = 'flex';
-            } 
-        }
-        function myFunction() {
-            var menu = document.querySelector('.navbar .menu');
-
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            } 
-        }
-        window.addEventListener("resize", displayWindowSize);
-        displayWindowSize(); 
-        </script>
-
+    <header>
+        <h1>Richard Li</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#works">WRITING</a></li>
+                <li><a href="#honors">HONORS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home"> <img src="richard_headshot.png" alt="Richard Li">
+            <div class="bio">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
